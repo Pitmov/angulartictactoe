@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular4tictactoe"
+    "name": "angular4tictactoe",
+    "ejected": true
   },
   "apps": [
     {
@@ -9,7 +10,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "service-worker.js"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -52,6 +54,7 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {}
+    "component": {
+    }
   }
 }
