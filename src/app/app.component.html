@@ -1,8 +1,0 @@
-<div id="game-container" #gameContainer *ngIf="!loading">
-  <div id="winning-line" class="{{!!state.winningLine ? state.winningLine : 'hidden-line'}}"></div>
-  <div *ngFor="let colIndex of columns;" class="cell-container" (click)="makeStep(colIndex)">
-    <div class="cell-container-content">{{state.board[colIndex]}}</div>
-  </div>
-</div>
-<div id="game-messages-container" *ngIf="isGameEnded">{{state.result}}</div>
-<div (click)="reset()" *ngIf="isGameEnded" id="reset-button">Reset</div>
